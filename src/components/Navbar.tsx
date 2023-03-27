@@ -9,7 +9,7 @@ import logo from "../assets/img/logo-removebg-preview.png";
 const navigation = [
   { name: "About", href: "#pg1", current: true },
   { name: "Projects", href: "#pg2", current: false },
-  { name: "Expirance", href: "#pg3", current: false },
+  { name: "FAQ", href: "#pg3", current: false },
   { name: "Contact", href: "#pg4", current: false },
 ];
 function classNames(...classes: string[]) {
@@ -18,7 +18,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <div className="container mx-auto fixed right-0 left-0 bg-black">
+    <div className="container mx-auto">
       <Disclosure as="nav">
         {({ open }) => (
           <>
