@@ -1,7 +1,3 @@
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Section from "@/components/Section";
 import Main from "@/modules/home/Main";
 import Head from "next/head";
 

@@ -63,7 +63,7 @@ export default function Section() {
             <h1 className="font-semibold text-xl lg:text-2xl text-white">
               What is Java Script?
             </h1>
-            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5">
+            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5 border">
               <Link href={"/js"}> See it</Link>
             </button>
           </div>
@@ -71,7 +71,7 @@ export default function Section() {
             <h1 className="font-semibold text-xl lg:text-2xl text-white">
               Why developers always use React js?
             </h1>
-            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5">
+            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5 border">
               <Link href={"/react"}> See it</Link>
             </button>
           </div>
@@ -79,7 +79,7 @@ export default function Section() {
             <h1 className="font-semibold text-xl lg:text-2xl text-white">
               What is Git, Github / Gitlab?
             </h1>
-            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5">
+            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5 border">
               <Link href={"/things"}> See it</Link>
             </button>
           </div>
@@ -87,7 +87,7 @@ export default function Section() {
             <h1 className="font-semibold text-xl lg:text-2xl text-white">
               How to write clean code?
             </h1>
-            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5">
+            <button className="py-2 px-5 font-semibold rounded-lg bg-blue-600 mt-5 border">
               <Link href={"/code"}> See it</Link>
             </button>
           </div>

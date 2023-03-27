@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Main() {
   return (
-    <div className="bg-black">
+    <div className="bg-blue-600">
       <Header />
       <Section />
       <Contact />
