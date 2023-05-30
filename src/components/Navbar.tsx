@@ -30,7 +30,7 @@ export default function Navbar() {
                   </Link>
                 </div>
                 <div className="flex items-center justify-between">
-                  <div className="hidden sm:ml-6 lg:block">
+                  <div className="hidden sm:ml-6 md:block">
                     <div className="flex space-x-4 items-center">
                       {navigation.map((item) => (
                         <a

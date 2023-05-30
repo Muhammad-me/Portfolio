@@ -1,9 +1,7 @@
-import { Accordion } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import pr1 from "../assets/img/Screenshot (83).png";
 import pr2 from "../assets/img/Screenshot (84).png";
-import js from "../assets/img/Screenshot 2023-03-25 161834.png";
 
 export default function Section() {
   return (
@@ -13,7 +11,7 @@ export default function Section() {
           Projects
         </h1>
         <div className="py-24">
-          <div className="block lg:flex flex-wrap justify-between items-center">
+          <div className="block md:flex flex-wrap justify-center md:justify-between items-center">
             <div className="w-full md:w-1/3">
               <h1 className="lg:font-extrabold text-2xl lg:text-5xl lg:tracking-widest text-center lg:text-left">
                 On Time
@@ -29,7 +27,7 @@ export default function Section() {
               </Link>
             </div>
           </div>
-          <div className="block lg:flex flex-wrap lg:flex-row justify-between items-center mt-10 lg:mt-20">
+          <div className="block md:flex flex-wrap flex-row-reverse lg:flex-row justify-center md:justify-between items-center mt-10 lg:mt-20">
             <div className="w-full md:w-1/3 lg:hidden mb-5">
               <h1 className="lg:font-extrabold text-2xl lg:text-5xl lg:tracking-widest mt-6 lg:mt-0 text-center lg:text-left">
                 Yupak

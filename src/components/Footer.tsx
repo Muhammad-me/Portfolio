@@ -19,7 +19,7 @@ function classNames(...classes: string[]) {
 
 export default function Footer() {
   return (
-    <div className="container mx-auto px-5 py-5 lg:py-20 overflow-x-hidden">
+    <div className="container mx-auto px-5 py-5 lg:py-16 overflow-x-hidden">
       <div className="lg:flex justify-between">
         <div className="hidden lg:block">
           <Link href={"/"}>

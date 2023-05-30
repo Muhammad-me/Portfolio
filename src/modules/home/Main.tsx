@@ -9,7 +9,9 @@ export default function Main() {
     <div className="bg-blue-600">
       <Header />
       <Section />
-      <Contact />
+      <div className="bg-white">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
