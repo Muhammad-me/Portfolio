@@ -23,35 +23,35 @@ export default function Header() {
               </p>
             </div>
             <div>
-              <Image src={logo} alt={""} />
+              <Image src={logo} alt={"logo"} />
             </div>
           </div>
           <div className="flex gap-5 justify-center lg:justify-between flex-wrap mt-20 text-white">
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale100 bg-gradient-to-r from-red-300 to-orange-500 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-red-300 to-orange-500 shadow-md shadow-white text-base lg:text-xl font-bold">
               HTML
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale10 bg-gradient-to-r from-sky-500 to-blue-600 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 shadow-md shadow-white text-base lg:text-xl font-bold">
               CSS
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale100 bg-gradient-to-r from-red-400 to-red-500 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-red-400 to-red-500 shadow-md shadow-white text-base lg:text-xl font-bold">
               SCSS
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale10 bg-gradient-to-r from-orange-400 to-orange-600 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg bg-gradient-to-r from-orange-400 to-orange-600 shadow-md shadow-white text-base lg:text-xl font-bold">
               JavaScript
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale100 bg-gradient-to-r from-sky-400 to-sky-600 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-sky-400 to-sky-600 shadow-md shadow-white text-base lg:text-xl font-bold">
               React js
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale10 bg-zinc-900 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg bg-zinc-900 shadow-md shadow-white text-base lg:text-xl font-bold">
               Next js
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale100 bg-gradient-to-r from-blue-500 to-blue-600 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-blue-500 to-blue-600 shadow-md shadow-white text-base lg:text-xl font-bold">
               Tailwind CSS
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale10 bg-gradient-to-r from-green-600 to-green-800 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg bg-gradient-to-r from-green-600 to-green-800 shadow-md shadow-white text-base lg:text-xl font-bold">
               Node js
             </div>
-            <div className="px-8 py-2 lg:py-5 ease-out duration-700 delay-700 rounded-lg scale100 bg-gradient-to-r from-blue-700 to-blue-900 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-blue-700 to-blue-900 shadow-md shadow-white text-base lg:text-xl font-bold">
               Git
             </div>
           </div>

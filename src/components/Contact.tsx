@@ -1,139 +1,122 @@
-import Email from "@/assets/icon/Email";
+import { Button, Group, Text, TextInput, Textarea, Title } from "@mantine/core";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Location from "@/assets/icon/Location";
 import Phone from "@/assets/icon/Phone";
+import Email from "@/assets/icon/Email";
 
 export default function Contact() {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
+  const { t } = useTranslation("translation");
+
+  const { name, email, number, message } = data;
+
+  const handleChange = (e: any) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "https://v1.nocodeapi.com/binearybeast/google_sheets/muETCjsbtwGEdcsN?tabId=Лист1",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify([
+            [name, email, number, message, new Date().toLocaleString()],
+          ]),
+        }
+      );
+      await response.json();
+      setData({ ...data, name: "", email: "", number: "", message: "" });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
-    <div id="pg4" className="container mx-auto px-5 py-12 lg:py-40">
-      <div className="lg:flex justify-between">
-        <div className="w-1/2 mx-auto">
-          <div>
-            <h1 className="font-bold text-xl lg:text-4xl">
-              GET IN TOUCH WITH ME
-            </h1>
-            <p className="font-semibold text-base lg:text-lg mt-5">
-              Feel free to contact me if you have any questions or want to
-              collaborate on a project.
-            </p>
-            <div className="flex gap-4 mt-10">
-              <div>
-                <Location />
-              </div>
-              <div>
-                <h1 className="font-bold text-base lg:text-lg">My Location</h1>
-                <p className="font-medium text-sm lg:text-base">
-                  64 S.t Saodat, Yangikurgan, <br /> Namangan, Uzbekistan
-                </p>
-              </div>
+    <div id="pg4" className="container mx-auto px-5 py-32">
+      <div className="flex justify-between">
+        <div className="w-1/3">
+          <Title className="">{t("contact")} </Title>
+          <Text className="text-xl font-semibold" mt="sm" mb={30}>
+            {t("ct_txt")}
+          </Text>
+          <div className="flex gap-3 w-3/4">
+            <Location />
+            <div>
+              <h1 className="text-xl font-semibold">{t("my_loc")}</h1>
+              <p className="text-md font-medium">{t("my_txt")}</p>
             </div>
-            <div className="flex gap-4 mt-10">
-              <div>
-                <Phone />
-              </div>
-              <div>
-                <h1 className="font-bold text-base lg:text-lg">Phone Number</h1>
-                <p className="font-medium text-sm lg:text-base">
-                  + 998 94 153 2266
-                </p>
-              </div>
+          </div>
+          <div className="flex gap-3 mt-5">
+            <Phone />
+            <div>
+              <h1 className="text-xl font-semibold">{t("ph_num")}</h1>
+              <p className="text-md font-medium">{t("ph_numb")}</p>
             </div>
-            <div className="flex gap-4 mt-10">
-              <div>
-                <Email />
-              </div>
-              <div>
-                <h1 className="font-bold text-base lg:text-lg">
-                  Email Address
-                </h1>
-                <p className="font-medium text-sm lg:text-base">
-                  mmajidhanov@gmail.com
-                </p>
-              </div>
+          </div>
+          <div className="flex gap-3 mt-5">
+            <Email stroke={"#00bfd8"} />
+            <div>
+              <h1 className="text-xl font-semibold">{t("mail")}</h1>
+              <p className="text-md font-medium">{t("email_txt")}</p>
             </div>
           </div>
         </div>
-        <form className="w-full max-w-lg mx-auto mt-10">
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-first-name"
-              >
-                First Name
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                id="grid-first-name"
-                type="text"
-                placeholder="Jane"
-              />
-              <p className="text-red-500 text-xs italic">
-                Please fill out this field.
-              </p>
-            </div>
-            <div className="w-full md:w-1/2 px-3">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-last-name"
-              >
-                Last Name
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-last-name"
-                type="text"
-                placeholder="Doe"
-              />
-            </div>
-          </div>
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                E-mail
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="email"
-                type="email"
-              />
-              <p className="text-gray-600 text-xs italic">
-                Some tips - as long as needed
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                Message
-              </label>
-              <textarea
-                className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
-                id="message"
-              ></textarea>
-              <p className="text-gray-600 text-xs italic">
-                Re-size can be disabled by set by resize-none / resize-y /
-                resize-x / resize
-              </p>
-            </div>
-          </div>
-          <div className="md:flex md:items-center">
-            <div className="md:w-1/3">
-              <button
-                className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                type="button"
-              >
-                Send
-              </button>
-            </div>
-            <div className="md:w-2/3"></div>
-          </div>
-        </form>
+        <div className="w-1/3 font-semibold">
+          <form onSubmit={handleSubmit}>
+            <TextInput
+              label={t("nm")}
+              placeholder={t("nm_txt")}
+              onChange={handleChange}
+              value={name}
+              name="name"
+            />
+            <TextInput
+              label={t("mail")}
+              placeholder={t("mail_txt")}
+              className="mt-5"
+              onChange={handleChange}
+              value={email}
+              name="email"
+            />
+            <TextInput
+              label={t("ph_num")}
+              placeholder="+998 xx xxx xxxx"
+              className="mt-5"
+              onChange={handleChange}
+              value={number}
+              name="number"
+            />
+            <Textarea
+              label={t("msg")}
+              placeholder={t("msg_txt")}
+              minRows={4}
+              className="mt-5"
+              onChange={handleChange}
+              value={message}
+              name="message"
+            />
+            <Group position="right" className="mt-5">
+              <Button
+                className="bg-blue-400 hover:bg-blue-900"
+                onSubmit={handleSubmit}
+                onClick={handleSubmit}>
+                {t("snd")}
+              </Button>
+            </Group>
+          </form>
+        </div>
       </div>
     </div>
   );
