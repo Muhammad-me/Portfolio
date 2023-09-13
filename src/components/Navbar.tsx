@@ -8,8 +8,8 @@ import logo from "../assets/img/logo-removebg-preview.png";
 
 const navigation = [
   { name: "About", href: "#pg1", current: true },
-  { name: "Projects", href: "#pg2", current: false },
-  { name: "FAQ", href: "#pg3", current: false },
+  { name: "Projects", href: "#about", current: false },
+  { name: "FAQ", href: "#faq", current: false },
   { name: "Contact", href: "#pg4", current: false },
 ];
 function classNames(...classes: string[]) {
@@ -40,8 +40,7 @@ export default function Navbar() {
                             "font-bold text-base text-white hover:bg-cyan-400",
                             "rounded-md px-3 py-2 font-medium"
                           )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
+                          aria-current={item.current ? "page" : undefined}>
                           {item.name}
                         </a>
                       ))}
@@ -70,8 +69,7 @@ export default function Navbar() {
                       ),
                       "flex items-center gap-3 justify-center py-2 rounded-lg border text-lg uppercase font-medium")
                     }
-                    aria-current={item.current ? "page" : undefined}
-                  >
+                    aria-current={item.current ? "page" : undefined}>
                     {item.name} <ArrowUp />
                   </Disclosure.Button>
                 ))}

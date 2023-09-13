@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import pr1 from "../assets/img/Screenshot (83).png";
 import pr2 from "../assets/img/Screenshot (84).png";
+import pr3 from "../assets/img/Screenshot (146).png";
 
 export default function Section() {
   return (
     <>
-      <div id="pg2" className="container mx-auto px-5 text-white mt-14">
+      <div id="about" className="container mx-auto px-5 text-white mt-14">
         <h1 className="font-semibold text-3xl lg:text-4xl text-center">
           Projects
         </h1>
@@ -21,8 +22,8 @@ export default function Section() {
                 way it builds in next js.
               </p>
             </div>
-            <div className="w-full md:w-1/2 mt-6 lg:mt-0">
-              <Link href={"https://on-time-flame.vercel.app/"}>
+            <div className="w-full md:w-1/2 mt-6 lg:mt-0 img duration-500">
+              <Link href={"https://on-time-mhd.netlify.app/"}>
                 <Image src={pr1} alt={""} />
               </Link>
             </div>
@@ -37,7 +38,7 @@ export default function Section() {
                 way it builds in next js.
               </p>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 img duration-500">
               <Link href={"https://yu-pak.vercel.app/"}>
                 <Image src={pr2} alt={""} />
               </Link>
@@ -52,9 +53,25 @@ export default function Section() {
               </p>
             </div>
           </div>
+          <div className="block md:flex flex-wrap justify-center md:justify-between items-center mt-10 lg:mt-20">
+            <div className="w-full md:w-1/3">
+              <h1 className="lg:font-extrabold text-2xl lg:text-5xl lg:tracking-widest text-center lg:text-left">
+                VipTurizm
+              </h1>
+              <p className="font-medium text-lg lg:text-3xl lg:tracking-wider text-center lg:text-left">
+                In this project used Tailwind css, By the way it builds in next
+                js.
+              </p>
+            </div>
+            <div className="w-full md:w-1/2 mt-6 lg:mt-0 img duration-500">
+              <Link href={"https://vipturizm-five.vercel.app/"}>
+                <Image src={pr3} alt={""} />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="pg3" className="container mx-auto px-5 text-white">
+      <div id="faq" className="container mx-auto px-5 text-white">
         <h1 className="font-semibold text-3xl lg:text-4xl text-center">FAQ</h1>
         <div className="lg:flex flex-wrap justify-center gap-10 py-16">
           <div className="p-10 lg:w-1/3 shadow-lg shadow-neutral-500">

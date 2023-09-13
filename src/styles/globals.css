@@ -8,3 +8,31 @@
   box-sizing: border-box;
   font-family: "Russo One", sans-serif;
 }
+.img:hover {
+  transform: scale(1.1);
+  transition: all 3s;
+}
+.scale10 {
+  animation: scale10 2s infinite alternate;
+  transition: all 3s;
+}
+.scale100 {
+  animation: scale100 2s infinite alternate;
+  transition: all 3s;
+}
+@keyframes scale10 {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+@keyframes scale100 {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
