@@ -87,7 +87,7 @@ export default function Navbar() {
               title="Menu"
               size={250}
               overlayProps={{ opacity: 0.5, blur: 4 }}
-              className="w-2/3">
+              className="">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -97,7 +97,7 @@ export default function Navbar() {
                     "rounded-md px-3 py-2 font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}>
-                  {item.name}
+                  {t(item.name)}
                 </a>
               ))}
             </Drawer>

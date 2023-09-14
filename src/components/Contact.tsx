@@ -45,13 +45,13 @@ export default function Contact() {
 
   return (
     <div id="pg4" className="container mx-auto px-5 py-32">
-      <div className="flex justify-between">
-        <div className="w-1/3">
+      <div className="block sm:flex justify-between">
+        <div className="w-full sm:w-1/3">
           <Title className="">{t("contact")} </Title>
           <Text className="text-xl font-semibold" mt="sm" mb={30}>
             {t("ct_txt")}
           </Text>
-          <div className="flex gap-3 w-3/4">
+          <div className="flex gap-3 sm:w-3/4">
             <Location />
             <div>
               <h1 className="text-xl font-semibold">{t("my_loc")}</h1>
@@ -73,7 +73,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-1/3 font-semibold">
+        <div className="w-full sm:w-1/3 mt-10 sm:mt-0 font-semibold">
           <form onSubmit={handleSubmit}>
             <TextInput
               label={t("nm")}
