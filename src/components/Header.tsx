@@ -26,33 +26,69 @@ export default function Header() {
               <Image src={logo} alt={"logo"} />
             </div>
           </div>
-          <div className="flex gap-5 justify-center lg:justify-between flex-wrap mt-20 text-white">
-            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-red-300 to-orange-500 shadow-md shadow-white text-base lg:text-xl font-bold">
-              HTML
+          <div className="flex gap-5 justify-center lg:justify-between flex-wrap mt-20 text-white text-center">
+            <div className="px-4 py-2 w-28 h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0  bg-gradient-to-r from-red-300 to-orange-500 text-base lg:text-xl font-bold">
+              <h1>HTML</h1>
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 shadow-md shadow-white text-base lg:text-xl font-bold">
-              CSS
+            <div className="px-4 py-2 w-32 h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0 bg-gradient-to-r from-sky-500 to-blue-600 text-base lg:text-xl font-bold">
+              <h1>CSS</h1>
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-red-400 to-red-500 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-4 py-2 w-32 h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0  bg-gradient-to-r from-red-400 to-red-500 text-base lg:text-xl font-bold">
               SCSS
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg bg-gradient-to-r from-orange-400 to-orange-600 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-4 py-2 w-44 h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0 bg-gradient-to-r from-orange-400 to-orange-600 text-base lg:text-xl font-bold">
               JavaScript
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-sky-400 to-sky-600 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-4 py-2 w-[150px] h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0  bg-gradient-to-r from-sky-400 to-sky-600 text-base lg:text-xl font-bold">
               React js
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg bg-zinc-900 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-4 py-2 w-36 h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0 bg-zinc-900 text-base lg:text-xl font-bold">
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
               Next js
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-blue-500 to-blue-600 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-4 py-2 w-[200px] h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0  bg-gradient-to-r from-blue-500 to-blue-600 text-base lg:text-xl font-bold">
               Tailwind CSS
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg bg-gradient-to-r from-green-600 to-green-800 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-4 py-2 w-[150px] h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0 bg-gradient-to-r from-green-600 to-green-800 text-base lg:text-xl font-bold">
               Node js
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
-            <div className="px-8 py-2 lg:py-5 rounded-lg  bg-gradient-to-r from-blue-700 to-blue-900 shadow-md shadow-white text-base lg:text-xl font-bold">
+            <div className="px-4 py-2 w-28 h-[43px] lg:h-16 lg:py-5 overflow-hidden relative border-0  bg-gradient-to-r from-blue-700 to-blue-900 text-base lg:text-xl font-bold">
               Git
+              <span className="bordert"></span>
+              <span className="borderr"></span>
+              <span className="borderb"></span>
+              <span className="borderl"></span>
             </div>
           </div>
         </div>

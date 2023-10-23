@@ -20,6 +20,76 @@
   animation: scale100 2s infinite alternate;
   transition: all 3s;
 }
+.bordert {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #171618, #fcc23f);
+  animation: bordertop 2s linear infinite;
+}
+.borderr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom, #171618, #fcc23f);
+  animation: borderright 2s linear infinite;
+  animation-delay: 1s;
+}
+.borderb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #171618, #fcc23f);
+  animation: borderb 2s linear infinite;
+}
+.borderl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to top, #171618, #fcc23f);
+  animation: borderl 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes bordertop {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes borderright {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes borderb {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes borderl {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 @keyframes scale10 {
   from {
     transform: scale(1.1);
